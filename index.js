@@ -42,6 +42,10 @@ function divide() {
     let number2 = document.getElementById("number2").value;
     number2 = parseInt(number2);
 
+    if (number2 == 0){
+        alert('На ноль делить нельзя! Вы получите бесконечность');
+    }
+
     const result = (Number(number1) / Number(number2));
     document.getElementById("out").innerHTML = result;
 }
